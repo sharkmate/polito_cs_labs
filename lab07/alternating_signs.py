@@ -14,6 +14,8 @@ def main():
     while not nums == " ":
         nums = (input("insert a number, stop with a white space "))
         nums_list.append(nums)
+        if ValueError:
+            break
     nums_list.pop(-1)
     for i in nums_list[1::2]:
         result += int(i)

@@ -30,6 +30,7 @@ def convert_number():
     }
     if len(r_num) == 1:
         a_num += conv[r_num]
+        print(a_num)
     else:
         for x in range(len(r_num)-1):
             if conv[r_num[x]] >= conv[r_num[x+1]]:
@@ -37,7 +38,7 @@ def convert_number():
             else:
                 a_num -= conv[r_num[x]]
 
-    print(a_num+conv[r_num[-1]])
+        print(a_num+conv[r_num[-1]])
 
 
 
