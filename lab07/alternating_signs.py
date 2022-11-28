@@ -8,21 +8,22 @@ it must calculate and display 1 - 4 + 9 - 16 + 9 - 7 + 4 - 9 + 11 = –2.
 
 
 def main():
-    nums = 0
-    nums_list = []
-    result = 0
-    while not nums == " ":
-        nums = (input("insert a number, stop with a white space "))
-        nums_list.append(nums)
-        if ValueError:
-            break
-    nums_list.pop(-1)
-    for i in nums_list[1::2]:
-        result += int(i)
-    for j in nums_list[0::2]:
-        result -= int(j)
+    try:
+        nums = 0
+        nums_list = []
+        result = 0
+        while not nums == " ":
+            nums = (input("insert a number, stop with a white space "))
+            nums_list.append(nums)
+        nums_list.pop(-1)
+        for i in nums_list[1::2]:
+            result += int(i)
+        for j in nums_list[0::2]:
+            result -= int(j)
 
-    print(nums_list, result)
+        print(nums_list, result)
+    except ValueError:
+        print("the user input is raising a value error")
 
 
 if __name__ == "__main__":
