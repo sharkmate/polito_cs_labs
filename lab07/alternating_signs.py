@@ -16,9 +16,9 @@ def main():
             nums = (input("insert a number, stop with a white space "))
             nums_list.append(nums)
         nums_list.pop(-1)
-        for i in nums_list[1::2]:
+        for i in nums_list[::2]:
             result += int(i)
-        for j in nums_list[0::2]:
+        for j in nums_list[1::2]:
             result -= int(j)
 
         print(nums_list, result)
